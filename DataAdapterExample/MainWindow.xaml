@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DataAdapterExample"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" FontSize="20">
+        Title="MainWindow" Height="450" Width="1200" FontSize="20">
     <StackPanel Orientation="Vertical">
         <!-- действия, выполняемые в прогармме-->
         <TabControl>
@@ -25,7 +25,8 @@
                     <StackPanel Orientation="Horizontal">
                         <Label Content="Actions: "  Margin="10"/>
                         <Button x:Name="runBtn" Content="Run" Width="100" Margin="10" Click="runBtn_Click"/>
-                        <TextBox x:Name="QweryText" Width="500" VerticalAlignment="Center" Margin="10"/>
+                        <Button x:Name="update1Btn" Content="Update" Width="100" Margin="10" Click="update1Btn_Click"/>
+                        <TextBox x:Name="QweryText" Width="800" VerticalAlignment="Center" Margin="10"/>
                     </StackPanel>
                     <!-- вывод результатов -->
                     <DataGrid x:Name="dataGrid1"  Height="900"/>
